@@ -24,7 +24,7 @@ public class OperadorCrucero extends Usuario{
         gestor.cancelarViajeYReembolsar(viaje, "Cancelación administrativa autorizada por operador.");
     }
 
-    // Getters y Setters
+    
     public String getIdOperador() { 
         return idOperador; 
     }
