@@ -18,4 +18,4 @@ Resultado de Aprendizaje
 | Integrante 4 | Carlos Hidalgo  | mario-jijon | 
 
 Los diagramas de Casos de Uso, Clases y Secuencias, junto con la justificación detallada de la aplicación de los principios SOLID, se encuentran en el documento oficial adjunto en este repositorio:
-[Haz clic aquí para ver el Documento Completo del Proyecto (PDF)](./TAREA01_SOLID_UML Grupo#2.pdf)
+[Documento Completo del Proyecto (PDF)](./TAREA01_SOLID_UML%20Grupo%232.pdf)
