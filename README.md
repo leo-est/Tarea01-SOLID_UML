@@ -1,6 +1,8 @@
 # Tarea01-ds
 Tarea del Grupo #2
 
+CruiseBook - Sistema de Reservas de Cruceros
+
 Objetivos Específicos
 1.	Aplicar principios SOLID para garantizar un diseño de software que sea robusto, flexible y fácilmente mantenible.
 2.	Utilizar diagramas UML para documentar y comunicar el diseño del sistema, especificando casos de uso, clases, y secuencias de interacciones entre componentes.
@@ -17,5 +19,5 @@ Resultado de Aprendizaje
 | Integrante 3 | Valentina Concha  | ValentinaC1502 | 
 | Integrante 4 | Carlos Hidalgo  | mario-jijon | 
 
-Los diagramas de Casos de Uso, Clases y Secuencias, junto con la justificación detallada de la aplicación de los principios SOLID, se encuentran en el documento oficial adjunto en este repositorio:
+La documento de los diagramas y los principios SOLID estan en el documento ajunto del repositorio:
 [Documento Completo del Proyecto (PDF)](./TAREA01_SOLID_UML%20Grupo%232.pdf)
