@@ -1,43 +1,19 @@
 package tarea01_ds;
 
-public class OperadorCrucero extends Usuario{
-
+public class OperadorCrucero {
     private String idOperador;
-    private String rolAdministrativo;
+    private String nombreAdministrador;
 
-    public OperadorCrucero(String idUsuario, String nombre, String email, String telefono, String idOperador, String rolAdministrativo) {
-        super(idUsuario, nombre, email, telefono);
+    public OperadorCrucero(String idOperador, String nombreAdministrador) {
         this.idOperador = idOperador;
-        this.rolAdministrativo = rolAdministrativo;
+        this.nombreAdministrador = nombreAdministrador;
     }
 
-   public void configurarPolitica(ViajeCrucero viaje, PoliticaReserva politica) {
-        System.out.println("Configurando política de reserva para el viaje: " + viaje.getIdViaje());
-    }
-
-    public void definirCondicionesCabina(Cabina cabina, String condiciones) {
-        System.out.println("Definiendo condiciones especiales para la cabina " + cabina.getNumero() + ": " + condiciones);
-    }
-
-    public void ejecutarCancelacionViaje(GestorCancelacionViaje gestor, ViajeCrucero viaje) {
-        System.out.println("El operador " + nombre + " está ejecutando la cancelación del viaje " + viaje.getIdViaje());
-        gestor.cancelarViajeYReembolsar(viaje, "Cancelación administrativa autorizada por operador.");
-    }
-
-    // Getters y Setters
-    public String getIdOperador() { 
-        return idOperador; 
+    // Retorna una política configurada para que el resto del sistema la use
+    public PoliticaReserva configurarPoliticas(String idPolitica, int horasLimite, double reembolso) {
+        System.out.println("Operador " + nombreAdministrador + " estableciendo nuevas políticas.");
+        return new PoliticaReserva(idPolitica, horasLimite, reembolso);
     }
     
-    public void setIdOperador(String idOperador) { 
-        this.idOperador = idOperador; 
-    }
-
-    public String getRolAdministrativo() { 
-        return rolAdministrativo; 
-    }
-    
-    public void setRolAdministrativo(String rolAdministrativo) { 
-        this.rolAdministrativo = rolAdministrativo; 
-    }
+    // Aquí irían otros métodos
 }
