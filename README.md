@@ -20,4 +20,4 @@ Resultado de Aprendizaje
 | Integrante 4 | Carlos Hidalgo  | mario-jijon | 
 
 La documento de los diagramas y los principios SOLID estan en el documento ajunto del repositorio:
-[Documento Completo del Proyecto (PDF)](./TAREA01_SOLID_UML%20Grupo%232.pdf)
+[Documento Completo del Proyecto (PDF)](./Tarea01_SOLID_UML_Grupo2.pdf)
