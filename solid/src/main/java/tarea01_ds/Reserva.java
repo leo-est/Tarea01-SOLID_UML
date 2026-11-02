@@ -11,7 +11,7 @@ public class Reserva {
     private double montoTotal;
     private String estado;
     
-    // Relaciones del diagrama
+    
     private Cliente cliente;
     private ViajeCrucero viajeCrucero;
     private Cabina cabina;
@@ -29,10 +29,10 @@ public class Reserva {
         this.montoTotal = calcularMontoTotal();
     }
 
-    // Método exacto según el diagrama
+    
     public void agregarServicioAdicional(IServicioAdicional servicio) {
         this.serviciosAdicionales.add(servicio);
-        this.montoTotal = calcularMontoTotal(); // Actualiza el monto al sumar servicios
+        this.montoTotal = calcularMontoTotal(); 
         System.out.println("Servicio adicional agregado a la reserva: " + servicio.obtenerNombre());
     }
 
@@ -60,7 +60,7 @@ public class Reserva {
         System.out.println("Reserva " + idReserva + " marcada como cancelada.");
     }
 
-    // Getters necesarios
+    
     public String getIdReserva() { return idReserva; }
     public double getMontoTotal() { return montoTotal; }
     public String getEstado() { return estado; }
