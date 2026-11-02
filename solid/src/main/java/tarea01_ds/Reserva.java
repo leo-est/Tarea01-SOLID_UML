@@ -27,6 +27,7 @@ public class Reserva {
         this.estado = "Pendiente";
         this.serviciosAdicionales = new ArrayList<>();
         this.montoTotal = calcularMontoTotal();
+        viajeCrucero.agregarReserva(this);
     }
 
     // Método exacto según el diagrama
@@ -64,5 +65,6 @@ public class Reserva {
     public String getIdReserva() { return idReserva; }
     public double getMontoTotal() { return montoTotal; }
     public String getEstado() { return estado; }
+    public Cliente getCliente() { return cliente; }
     public List<IServicioAdicional> getServiciosAdicionales() { return serviciosAdicionales; }
 }

@@ -1,5 +1,7 @@
 package tarea01_ds;
 
+import java.util.UUID;
+
 public class GestorReservas {
     private int tiempoBloqueoMinutos = 10;
     private IProcesadorPago procesadorPago;
@@ -16,8 +18,18 @@ public class GestorReservas {
         if (cabina.verificarDisponibilidad()) {
             cabina.bloquearTemporalmente(tiempoBloqueoMinutos);
             System.out.println("Cabina bloqueada por " + tiempoBloqueoMinutos + " minutos.");
-            
-            Reserva nuevaReserva = new Reserva();
+
+            if (!(usuario instanceof Cliente cliente)) {
+                cabina.liberarCabina();
+                throw new IllegalArgumentException("La reserva requiere un usuario de tipo Cliente.");
+            }
+
+            Reserva nuevaReserva = new Reserva(
+                    UUID.randomUUID().toString(),
+                    cliente,
+                    viaje,
+                    cabina
+            );
             return nuevaReserva;
         }
         

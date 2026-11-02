@@ -36,8 +36,10 @@ public class GestorCancelacionViaje {
         if (todosReembolsados) {
             System.out.println("Todos los reembolsos se procesaron correctamente.");
             
-            List<Usuario> usuariosAfectados = viaje.obtenerUsuariosAsociados();
-            servicioNotificaciones.notificarCancelacionYReembolso(usuariosAfectados, viaje);
+            servicioNotificaciones.notificarCancelacionYReembolso(
+                    viaje.obtenerUsuariosAsociados(reservasAfectadas),
+                    viaje
+            );
         }
 
         return todosReembolsados;
